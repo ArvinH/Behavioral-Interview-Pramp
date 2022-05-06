@@ -144,3 +144,30 @@ dialog .extra-info-area button {
 dialog .extra-info-area div {
   margin-left: 5px;
 }
+
+/* media query */
+
+@media(min-width:320px) {
+  section.question-area {
+    width: 90%;
+  }
+  section.answer-area {
+    width: 100%;
+    padding: 1rem;
+  }
+  textarea.input {
+    width: 90%;
+  }
+}
+@media(min-width:1024px) {
+  section.question-area {
+    width: 60%;
+  }
+  section.answer-area {
+    width: 80%;
+    padding: 2rem;
+  }
+  textarea.input {
+    width: 60%;
+  }
+}
