@@ -1,0 +1,9 @@
+Todo
+  - Generate datasets @done
+  - Design UI
+    - figma @done
+    - dark mode
+    - UX - random effect on question
+  - Randomly show behavioral question
+  - Can update & store answer in localstorage
+  - Default hide the answer

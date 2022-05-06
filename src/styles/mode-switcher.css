@@ -1,0 +1,56 @@
+.mode-switcher-wrapper {
+  width: 34px;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+.mode-switcher {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.mode-switcher svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+#sun {
+  transform: translateZ(1px);
+}
+
+#moon {
+  transform: translateZ(-1px) rotateY(180deg);
+}
+
+div.mode-switcher.animation900 {
+  -webkit-animation: rotate900 0.5s linear forwards; 
+  animation: rotate900 0.5s linear forwards;
+}
+
+div.mode-switcher.animation0 {
+  -webkit-animation: rotate0 0.5s linear forwards; 
+  animation: rotate0 0.5s linear forwards;
+}
+
+@-webkit-keyframes rotate900 {
+  from { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+  to { -webkit-transform: rotateY(900deg); -moz-transform: rotateY(900deg); transform: rotateY(900deg); }
+}
+
+@keyframes rotate900 {
+  from { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+  to { -webkit-transform: rotateY(900deg); -moz-transform: rotateY(900deg); transform: rotateY(900deg); }
+}
+
+
+@-webkit-keyframes rotate0 {
+  from { -webkit-transform: rotateY(900deg); -moz-transform: rotateY(900deg); transform: rotateY(900deg); }
+  to { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+}
+
+@keyframes rotate0 {
+  from { -webkit-transform: rotateY(900deg); -moz-transform: rotateY(900deg); transform: rotateY(900deg); }
+  to { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+}

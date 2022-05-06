@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #fff;
+  --font-color: #3c3c3c;
+  --action-button-color: #333334;
+  --action-button-font-color: #fff;
+  --question-area-border: #7e7e7e;
+  --input-border: #8b8a8b;
+  --input-focus-h: 245;
+  --input-focus-s: 100%;
+  --input-focus-l: 42%;
+}
+body.dark {
+  --background-color: #3c3c3c;
+  --font-color: #fff;
+  --action-button-color: #fff;
+  --action-button-font-color: #3c3c3c;
+  --question-area-border: #fff;
+}
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--background-color);
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+}
+
+header {
+  display: grid;
+  font-size: 2rem;
+  margin: 3rem 0 2rem 0;
+  color: var(--font-color);
+}
+
+section button {
+  background-color: var(--action-button-color);
+  color: var(--action-button-font-color);
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+section.question-area {
+  border-bottom: 1px solid var(--question-area-border);
+  width: 60%;
+  margin: 0 auto;
+  padding: 2rem 0 2rem 0;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.question {
+  font-weight: bold;
+  color: var(--font-color);
+}
+
+section.answer-area {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.answer-area button {
+  background-color: var(--action-button-color);
+  color: var(--action-button-font-color);
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+textarea {
+  display: none;
+}
+
+textarea.input {
+  font-size: 1rem;
+  font-family: inherit;
+  width: 60%;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 2px solid var(--input-border);
+  border-radius: 4px;
+  transition: 180ms box-shadow ease-in-out;
+  resize: vertical;
+}
+
+textarea.input:focus {
+  border-color: hsl(
+    var(--input-focus-h),
+    var(--input-focus-s),
+    var(--input-focus-l)
+  );
+  box-shadow: 0 0 0 3px
+    hsla(
+      var(--input-focus-h),
+      var(--input-focus-s),
+      calc(var(--input-focus-l) + 40%),
+      0.8
+    );
+  outline: 3px solid transparent;
+}
