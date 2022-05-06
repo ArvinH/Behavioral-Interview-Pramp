@@ -10,7 +10,7 @@ export const handleTheme = () => {
   } else {
     modeSwitcher.classList.add("animation0");
   }
-  modeSwitcher.addEventListener("click", function (e) {
+  modeSwitcher.addEventListener("click", function () {
     if (modeSwitcher.classList.contains("animation900")) {
       modeSwitcher.classList.remove("animation900");
       setTimeout(function () {

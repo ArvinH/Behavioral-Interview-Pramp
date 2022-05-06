@@ -58,4 +58,5 @@ function randomQuestion() {
 pickButton.addEventListener("click", () => {
   window.requestAnimationFrame(randomQuestion);
 });
+
 randomQuestion();
