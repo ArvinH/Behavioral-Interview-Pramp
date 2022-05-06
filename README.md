@@ -2,9 +2,14 @@
 
 Randomly pick a behavioral interview question for you to practice
 
+> But...but.. don't we already have something better like Quizlet can use?
+
+You are right, this is a product of procrastination
+
 ## Demo
 
-![demo](./demo.gif)
+https://user-images.githubusercontent.com/286856/167157783-6f966636-62e6-4039-be35-92680b1c6ad0.mov
+
 
 ### Features
 
