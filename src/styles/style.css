@@ -10,6 +10,7 @@
   --action-button-color: #333334;
   --action-button-font-color: #fff;
   --question-area-border: #7e7e7e;
+  --dialog-button-border: none;
   --input-border: #8b8a8b;
   --input-focus-h: 245;
   --input-focus-s: 100%;
@@ -21,6 +22,7 @@ body.dark {
   --action-button-color: #fff;
   --action-button-font-color: #3c3c3c;
   --question-area-border: #fff;
+  --dialog-button-border: 1px solid #3c3c3c;
 }
 body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -136,8 +138,8 @@ dialog .extra-info-area {
 dialog .extra-info-area button {
   background-color: var(--action-button-color);
   color: var(--action-button-font-color);
+  border: var(--dialog-button-border);
   padding: 0.5rem 0.8rem;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
 }
