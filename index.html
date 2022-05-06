@@ -53,9 +53,44 @@
     <div class="question">Tell me about a time when you had to motivate your team to take a particular action.</div>
   </section>
   <section class="answer-area">
-    <textarea class="input"></textarea>
-    <button>Show Answer</button>
+    <textarea class="input" placeholder="Your answer..."></textarea>
+    <div class="btn-area">
+      <button class="tipsButton">tips</button>
+      <button class="actionBtn">Show Answer</button>
+    </div>
   </section>
+
+  <dialog id="tips">
+    <div>
+      <ul>
+        <li>
+          <b>Use STAR structure</b>
+        </li>
+        <li>
+          <b>Use specific, memorable details.</b> “Social network for cats” instead of “a personal project.”
+        </li>
+        <li>
+          <b>Tell a story from your life. </b> “I was trying to solve a tricky bug…” instead of “I value open source
+          contributions.”
+        </li>
+        <li>
+          <b>Use someone else’s voice.</b> ’You really made things feel sane‘” instead of "I work well with others."
+        </li>
+      </ul>
+    </div>
+    <div class="extra-info-area">
+      <div>
+        Check
+        <a href="https://www.techinterviewhandbook.org/behavioral-interview-questions/">
+          here
+        </a>
+        for more information
+      </div>
+      <form method="dialog">
+        <button>close</button>
+      </form>
+    </div>
+  </dialog>
   <script type="module" src="/src/main.ts"></script>
 </body>
 

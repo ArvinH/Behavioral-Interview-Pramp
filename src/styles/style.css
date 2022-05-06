@@ -83,6 +83,13 @@ section.answer-area button {
   margin-top: 2rem;
 }
 
+section.answer-area .btn-area {
+  display: flex;
+}
+section.answer-area .btn-area button:nth-child(2) {
+  margin-left: 5px;
+}
+
 textarea {
   display: none;
 }
@@ -113,4 +120,27 @@ textarea.input:focus {
       0.8
     );
   outline: 3px solid transparent;
+}
+
+dialog#tips ul {
+  list-style: none;
+  text-align: start;
+  padding: 0;
+}
+
+dialog .extra-info-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+dialog .extra-info-area button {
+  background-color: var(--action-button-color);
+  color: var(--action-button-font-color);
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+dialog .extra-info-area div {
+  margin-left: 5px;
 }

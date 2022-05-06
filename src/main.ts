@@ -11,8 +11,19 @@ const len = questions.length;
 let randomPick = 0;
 
 const pickButton = document.querySelector<HTMLDivElement>(".action button")!;
-const actionButton =
-  document.querySelector<HTMLButtonElement>("textarea+button");
+const actionButton = document.querySelector<HTMLButtonElement>(".actionBtn");
+const tipsButton = document.querySelector<HTMLButtonElement>(".tipsButton");
+//@ts-ignore
+const tipsDialog = document.getElementById<HTMLDialogElement>("tips");
+//@ts-ignore
+if (tipsDialog && typeof tipsDialog?.showModal !== "function") {
+  tipsDialog.hidden = true;
+}
+
+tipsButton?.addEventListener("click", () => {
+  //@ts-ignore
+  tipsDialog && tipsDialog.showModal();
+});
 
 actionButton?.addEventListener("click", () => {
   const textarea = document.querySelector<HTMLTextAreaElement>("textarea");
