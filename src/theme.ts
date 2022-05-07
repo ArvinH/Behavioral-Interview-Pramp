@@ -29,11 +29,12 @@ export const handleTheme = () => {
   });
 
   modeSwitcher.addEventListener("animationend", () => {
-    body.classList.toggle("dark");
     if (modeSwitcher.classList.contains("animation900")) {
       localStorage.setItem("bip-color-mode", "dark");
+      body.classList.add("dark");
     } else {
       localStorage.setItem("bip-color-mode", "light");
+      body.classList.remove("dark");
     }
   });
 };
