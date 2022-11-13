@@ -46,7 +46,8 @@ actionButton?.addEventListener("click", async () => {
       const uid = auth.currentUser.uid;
       try {
         await setDoc(doc(db, "users", uid, "questions", `${randomPick}`), {
-          [pickedQuestion.question]: JSON.stringify(answers[randomPick]),
+          question: pickedQuestion.question,
+          answer: JSON.stringify(answers[randomPick]),
         });
         alert("save!");
       } catch(e) {
