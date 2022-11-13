@@ -7,3 +7,10 @@ Todo
   - Randomly show behavioral question @done
   - Can update & store answer in localstorage @done
   - Default hide the answer @done
+  - Firebase auth google integration @done
+  - auth state persistence @done
+  - auth logout @done
+  - Firestore setup @done
+  - Firestore read
+  - Firestore write @done
+  - firestore end-to-end encryption web

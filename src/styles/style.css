@@ -39,6 +39,17 @@ header {
   color: var(--font-color);
 }
 
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer .logout-btn {
+  display: none;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
 section button {
   background-color: var(--action-button-color);
   color: var(--action-button-font-color);
@@ -47,6 +58,10 @@ section button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+section .loginBtn {
+  display: none;
 }
 
 section.question-area {
@@ -87,9 +102,7 @@ section.answer-area button {
 
 section.answer-area .btn-area {
   display: flex;
-}
-section.answer-area .btn-area button:nth-child(2) {
-  margin-left: 5px;
+  gap: 5px;
 }
 
 textarea {
